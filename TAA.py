@@ -1,5 +1,4 @@
 import http.client
-import urllib.parse
 import json
 
 class TAA:
@@ -23,7 +22,7 @@ class TAA:
         return parsedJSON[ "changePercent" ]
 
     def getUnRateData():
-        headers = { "Content-type": "application/json", "Accept": "*/*" }
+        headers = { "Content-type": "application/json", "Accept": "*/*", "Cache-Control": "no-cache" }
         conn = http.client.HTTPSConnection( "api.bls.gov", 443 )
         conn.request( "POST", "/publicAPI/v1/timeseries/data/LNS14000000", "", headers )
 
@@ -45,7 +44,7 @@ class TAA:
         return ret
 
     def getAvanzaResponse( id, timePeriod, days ):
-        headers = { "Content-type": "application/json", "Accept": "*/*" }
+        headers = { "Content-type": "application/json", "Accept": "*/*", "Cache-Control": "no-cache" }
         body = "{\"orderbookId\":" + str( id ) + ",\"chartType\":\"AREA\",\"widthOfPlotContainer\":558,\"chartResolution\":\"DAY\",\"percentage\":true,\"volume\":false,\"owners\":false,\"timePeriod\":\"" + str( timePeriod ) + "\",\"ta\":[{\"type\":\"sma\",\"timeFrame\":" + str( days ) + "}]}"
         conn = http.client.HTTPSConnection( "www.avanza.se", 443 )
         conn.request( "POST", "/ab/component/highstockchart/getchart/orderbook", body, headers )
@@ -55,3 +54,4 @@ class TAA:
         conn.close()
 
         return data.decode( "utf-8" )
+    

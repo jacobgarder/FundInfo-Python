@@ -1,4 +1,3 @@
-import sys
 from Fund import Fund
 from TAA import TAA
 
