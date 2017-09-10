@@ -6,6 +6,7 @@ fundListPath = input( "Enter path to fundlist: " )
 
 with open( fundListPath, 'r' ) as handle:
     fundList = []
+    print( "Fetching data", end='', flush=True )
 
     for line in handle:
         if line == '\n' or line.startswith( '#' ):
