@@ -13,7 +13,10 @@ class TAA:
         response = TAA.getAvanzaResponse( id, "month", days )
         
         parsedJSON = json.loads( response )
-        return parsedJSON[ "technicalAnalysis" ][ 0 ][ "dataPoints" ][ -1 ][ -1 ]
+        try:
+            return parsedJSON[ "technicalAnalysis" ][ 0 ][ "dataPoints" ][ -1 ][ -1 ]
+        except IndexError:
+            return float( 'nan' )
 
     def getChangePercent( id, timePeriod ):
         response = TAA.getAvanzaResponse( id, timePeriod, 1 )
@@ -54,4 +57,3 @@ class TAA:
         conn.close()
 
         return data.decode( "utf-8" )
-    
