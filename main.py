@@ -41,4 +41,4 @@ print( "\n\n=== US Unemployment rate ===" )
 print( "Current: " + str( unRateData[ 0 ] ) )
 print( "MA12: " + str( '{:.3f}'.format( unRateData[ 1 ] ) ) )
 
-input()
+input( "\nDone" )

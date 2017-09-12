@@ -6,8 +6,8 @@ class Fund:
         self.id = id
         self.name = name
         self.NAV = TAA.getNAV( id )
-        self.MA6 = TAA.getMA( id, 200 )
-        self.MA10 = TAA.getMA( id, 300 )
+        self.MA6 = TAA.getMA( id, 120 )
+        self.MA10 = TAA.getMA( id, 200 )
         self.oneMonth = TAA.getChangePercent( id, "month" )
         self.threeMonths = TAA.getChangePercent( id, "three_months" )
         self.sixMonths = TAA.getChangePercent( id, "six_months" )
@@ -23,7 +23,7 @@ class Fund:
         return self.threeMonths
 
     def getFormattedHeader():
-        return '{:>10}{:>25}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}'.format( "Id", "Name", "NAV", "MA6 %", "MA10 %", "1 month", "3 months", "6 months", "1 year" )
+        return '{:>10}{:>25}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}'.format( "Id", "Name", "Current", "MA6 %", "MA10 %", "1 month", "3 months", "6 months", "1 year" )
 
     def getFormattedData( self ):
         return '{:>10}{:>25}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}'.format( self.id, self.name[ :23 ], self.NAV, self.getMA6Indicator(), self.getMA10Indicator(), self.oneMonth, self.threeMonths, self.sixMonths, self.oneYear )
