@@ -39,8 +39,8 @@ print("\n\n=== US Unemployment rate ===")
 print("Current: " + str(unRateData[0]))
 print("MA12: " + str('{:.3f}'.format(unRateData[1])))
 if unRateData[0] < unRateData[1]:
-    print("OK: unrate level is below MA12, ok!\n")
+    print("OK: unrate level is below MA12.\n")
 else:
-    print("Warning: unrate level is over MA12\n")
+    print("WARNING: unrate level is over MA12!\n")
 
 print("Done\n")
