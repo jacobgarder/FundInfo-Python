@@ -1,25 +1,48 @@
+# 221110  MSCI JAPAN INDEX UCITS ETF DR (XMJP)
 1717    Swedbank Robur Rysslandsfond
 181108  Länsförsäkringar USA Indexnära
-1933    Swedbank Robur Ny Teknik A
 194635  iShares Comex Gold Trust
-2111    AMF Räntefond Lång
-221110  MSCI JAPAN INDEX UCITS ETF DR (XMJP)
-255288  Handelsbanken Realränte
-2801    AMF Aktiefond Småbolag
 321692  DNB Finans
 3242	Danske Invest Japan A
 325406  Spiltan Aktiefond Investmentbolag
-350     Länsförsäkringar Fastighetsfond A
-41567   AVANZA ZERO
 417655  Länsförsäkringar Global Idx
 464     Handelsbanken Hälsovård Tema (A1 SEK)
 487076  Länsförsäkringar Tillväxtmrkd Idxnära A
 596635  Swedbank Robur Access Asien
+
+# Sverige Storbolag
+41567   AVANZA ZERO
+
+# Europa
 599     SPP Aktiefond Europa
+
+# Teknik
 927735  Core Ny Teknik
-94867   Spiltan Räntefond Sverige
-907817  Handelsbanken Råvarufond A1
-666676  Pacific Precious A
+1933    Swedbank Robur Ny Teknik A
+
+# Småbolag
 799913  Handelsbanken Gl Småbolag Ind Cri A1
 789175	PLUS Småbolag Sverige Index
+2801    AMF Aktiefond Småbolag
+
+# Fastigheter
 551035	IKC Fastighetsfond A
+350     Länsförsäkringar Fastighetsfond A
+
+# Ädelmetaller / Råvaror
+18986	Guld index (USD)
+1010568	Guld AVA (SEK)
+1010566 Silver AVA (SEK)
+907817  Handelsbanken Råvarufond A1
+666676  Pacific Precious A
+
+# Räntor
+94867   Spiltan Räntefond Sverige
+255288  Handelsbanken Realränte
+
+##  Lång räntor
+232005	VanG Bond 10-25y Government Bond Idx (USD)
+1063549 iShares $ Treasury Bond 20+yr (IS04, USD)
+384683  iShares Govt Bond 15-30yr  (IBCL, EUR)
+479457  Xtrackers II Eurozone Gov Bond 25+ (DBXG, EUR)
+2111    AMF Räntefond Lång

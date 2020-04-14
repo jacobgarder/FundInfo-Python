@@ -77,6 +77,8 @@ class TAA:
             "POST", "/ab/component/highstockchart/getchart/orderbook", body, headers)
 
         response = conn.getresponse()
+        if response.status != 200:
+            print(f"\nERR: {response.status}: {response.reason} when getting id: {id}\n")
         data = response.read()
         conn.close()
 

@@ -26,10 +26,10 @@ class Fund:
         return (self.average)
 
     def getFormattedHeader():
-        return '{:>10}{:>25}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}'.format(
+        return '{:>10}{:>32}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}{:>10}'.format(
             "Id", "Name", "Current", "MA6 %", "MA10 %", "1 month", "3 months", "6 months", "1 year", "1/3/6/12")
 
     def getFormattedData(self):
-        return '{:>10}{:>25}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}'.format(
-            self.id, self.name[:23], self.NAV, self.getMA6Indicator(), self.getMA10Indicator(), self.oneMonth, 
+        return '{:>10}{:>32}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}{:>10.2f}'.format(
+            self.id, self.name[:30], self.NAV, self.getMA6Indicator(), self.getMA10Indicator(), self.oneMonth, 
             self.threeMonths, self.sixMonths, self.oneYear, self.average)
